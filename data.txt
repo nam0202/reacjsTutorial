@@ -1,0 +1,43 @@
+HTML to JSX in google will help for couve
+alway had one div wrapper all tag
+bind variable to VIEW by { variable name }
+
+website magic.reactjs.net git html to jsx
+Pros 1 property 1 component
+parent input data to children by this.pros[key]
+event click sp https://reactjs.org/docs/events.html#supported-events
+
+use ref for get input text
+<input className="form-control mr-sm-2" ref="search" type="search" placeholder="Search" />
+<button className="btn btn-outline-success my-2 my-sm-0" type="submit" onClick={this.search}>Search</button>
+        console.log(this.refs.search.value);
+
+state only create in constructor
+get state this.state[key]
+change value state
+setState({
+    key: value
+})
+
+use style ={value}
+
+binding children to parent
+
+Parent{
+    setSometing(params){
+        
+    }
+
+    <childrenTag someKey = {this.setSometing}  />
+}
+
+
+
+children{
+    
+    someFunction(data){
+        this.props.someKey = data;
+    }
+
+    onclick = {()=>{this.someFunction(data)}}
+}
